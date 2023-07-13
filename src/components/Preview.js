@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 class Preview extends Component {
-  render() {
-    return (
-      <div className="preview">
-        <h1>hello world</h1>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+      }
+    render() {
+        return (
+        <div className="preview">
+            <div className="resumeContainer">
+                <h1>{this.props.name}</h1>
+                <p>education</p>
+                <p>jobs</p>
+            </div>
+        </div>
+        );
+    }
 }
 export default Preview;

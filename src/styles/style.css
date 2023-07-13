@@ -26,10 +26,17 @@ body{
 }
 .inputsSide{
     flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
     border-right:  1px solid rgb(48, 54, 68);
 }
 .preview{
+    display: flex;
     flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: 0;
+    align-items: center;
+    justify-content: center;
 }
 .inputs{
     margin: 0 auto;
@@ -57,4 +64,12 @@ body{
 .inputForm div{
     display: flex;
     flex-direction: column;
+}
+.resumeContainer{
+    background-color: white;
+    height: 90%;
+    width: 80%;
+    margin:auto;
+    margin-top: auto;
+    color: black;
 }

@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 class Inputs extends Component {
+    constructor(props) {
+        super(props);
+      }
   render() {
     return (
       <div className="inputs">
@@ -7,7 +10,7 @@ class Inputs extends Component {
         <h3>General information:</h3>
             <div>
                 <label for="name">Your name:</label>
-                <input type="text" id="name" name="name" />
+                <input type="text" id="name" name="name" onChange={this.props.changeName} />
             </div>
             <div>
                 <label for="email">Email:</label>
