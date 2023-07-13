@@ -9,6 +9,8 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: rgb(33, 36, 43);
+    color: white;
 }
 #root{
     height: 100%;
@@ -22,6 +24,19 @@ body{
     height: 100%;
     justify-content: stretch;
 }
-.generalContainer div{
+.inputsSide{
     flex-grow: 1;
+}
+.preview{
+    flex-grow: 2;
+}
+.inputForm{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.inputForm div{
+    display: flex;
+    flex-direction: column;
 }

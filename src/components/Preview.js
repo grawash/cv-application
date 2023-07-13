@@ -2,7 +2,7 @@ import React, { Component } from "react";
 class Preview extends Component {
   render() {
     return (
-      <div>
+      <div className="preview">
         <h1>hello world</h1>
       </div>
     );
