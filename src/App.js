@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import InputSide from "./components/InputSide";
+import Preview from "./components/Preview";
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>hello world</h1>
+        <InputSide />
+        <Preview />
       </div>
     );
   }
