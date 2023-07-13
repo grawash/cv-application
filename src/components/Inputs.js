@@ -2,9 +2,9 @@ import React, { Component } from "react";
 class Inputs extends Component {
   render() {
     return (
-      <div>
-        <h3>General information:</h3>
+      <div className="inputs">
         <form className="inputForm">
+        <h3>General information:</h3>
             <div>
                 <label for="name">Your name:</label>
                 <input type="text" id="name" name="name" />
@@ -26,8 +26,8 @@ class Inputs extends Component {
                 <input type="text" id="link" name="link" />
             </div>
         </form>
-        <h3>Education:</h3>
         <form className="inputForm">
+        <h3>Education:</h3>
             <div>
                 <label for="school">School name:</label>
                 <input type="text" id="school" name="school" />
@@ -45,8 +45,8 @@ class Inputs extends Component {
                 <input type="date" id="endDateEducation" name="endDateEducation" />
             </div>
         </form>
-        <h3>Experience:</h3>
         <form className="inputForm">
+        <h3>Experience:</h3>
             <div>
                 <label for="company">Company name:</label>
                 <input type="text" id="company" name="company" />

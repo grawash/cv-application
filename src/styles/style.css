@@ -26,15 +26,33 @@ body{
 }
 .inputsSide{
     flex-grow: 1;
+    border-right:  1px solid rgb(48, 54, 68);
 }
 .preview{
     flex-grow: 2;
 }
-.inputForm{
+.inputs{
     margin: 0 auto;
+    width: 70%;
+}
+.inputForm{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    margin:2rem 0;
+    color: rgb(171, 174, 184);
+}
+.inputForm input{
+    background-color: transparent;
+    border: 1px rgb(76, 82, 97) solid;
+    box-sizing: border-box;
+    padding: 7px;
+    color: rgb(171, 174, 184);
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+.inputForm input:focus{
+    box-shadow: 0px 0px 5px rgb(192, 189, 189);
+    color: white;
 }
 .inputForm div{
     display: flex;

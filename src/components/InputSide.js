@@ -4,7 +4,6 @@ class InputSide extends Component {
   render() {
     return (
       <div className="inputsSide">
-        <h1>hello world</h1>
         <Inputs />
       </div>
     );
