@@ -66,10 +66,33 @@ body{
     flex-direction: column;
 }
 .resumeContainer{
-    background-color: white;
+    background-color: rgb(238, 238, 238);
     height: 90%;
     width: 80%;
     margin:auto;
     margin-top: auto;
     color: black;
+    padding: 2rem;
+}
+.generalInfo{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 0 2rem;
+    margin-bottom: 0.5rem;
+}
+.previewName{
+    flex-grow: 1;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: small;
+    gap: 3px;
+}
+.nameBorder{
+    border-bottom: 2px solid black;
 }
