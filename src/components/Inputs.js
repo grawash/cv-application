@@ -24,7 +24,7 @@ class Inputs extends Component {
             end: e.target.endDateJob.value,
             id: (Math.random() + 1).toString(36).substring(7)
         }
-        this.props.addEducation(obj);
+        this.props.addExperience(obj);
     }
     
   render() {
@@ -54,7 +54,7 @@ class Inputs extends Component {
             </div>
         </form>
         <form className="inputForm" onSubmit={this.handleEducationSubmit}>
-        <h3>Education:</h3>
+            <h3>Education:</h3>
             <div>
                 <label htmlFor="school">School name:</label>
                 <input type="text" id="school" name="school" />
@@ -74,7 +74,7 @@ class Inputs extends Component {
             <button type="submit">Add</button>
         </form>
         <form className="inputForm" onSubmit={this.handleExperienceSubmit}>
-        <h3>Experience:</h3>
+            <h3>Experience:</h3>
             <div>
                 <label htmlFor="company">Company name:</label>
                 <input type="text" id="company" name="company" />

@@ -34,10 +34,19 @@ class Preview extends Component {
                 </div>
                 <div className="experience">
                     <h2>Experience</h2>
-                    <p>some job</p>
-                    <p>title of job</p>
-                    <p>12/12/12</p>
-                    <p>21/08/17</p>
+                    {
+                            this.props.experience.map((val,index) => {
+                                return(
+                                    <div key={val.id}>
+                                        <p>{val.company}</p>
+                                        <p>{val.position}</p>
+                                        <p>{val.jobDescribtion}</p>
+                                        <p>{val.start}</p>
+                                        <p>{val.end}</p>
+                                    </div>
+                                ) 
+                            })
+                        }
                 </div>
             </div>
         </div>

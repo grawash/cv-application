@@ -42,6 +42,8 @@ class App extends Component {
       }
     )
     console.log(this.state.experience);
+    console.log(this.state.education);
+
   }
   render() {
     return (
