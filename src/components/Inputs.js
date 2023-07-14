@@ -32,6 +32,7 @@ class Inputs extends Component {
       <div className="inputs">
         <form className="inputForm">
         <h3>General information:</h3>
+
             <div>
                 <label htmlFor="name">Your name:</label>
                 <input type="text" id="name" name="name" onChange={this.props.changeName} />
@@ -71,7 +72,7 @@ class Inputs extends Component {
                 <label htmlFor="endDateEducation">End date:</label>
                 <input type="date" id="endDateEducation" name="endDateEducation" />
             </div>
-            <button type="submit">Add</button>
+            <button type="submit" className="submitButton">Add</button>
         </form>
         <form className="inputForm" onSubmit={this.handleExperienceSubmit}>
             <h3>Experience:</h3>
@@ -95,7 +96,7 @@ class Inputs extends Component {
                 <label htmlFor="endDateJob">End date:</label>
                 <input type="date" id="endDateJob" name="endDateJob" />
             </div>
-            <button type="submit">Add</button>
+            <button type="submit" className="submitButton">Add</button>
         </form>
       </div>
     );
