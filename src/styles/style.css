@@ -39,8 +39,16 @@ body{
     justify-content: center;
 }
 .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     width: 70%;
+}
+.inputs div{
+    width: 90%;
+    margin: auto;
+    margin-top: 3px;
 }
 .inputForm{
     display: flex;
@@ -99,6 +107,11 @@ body{
     font-size: small;
     gap: 3px;
 }
+.contacts div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 .nameBorder{
     border-bottom: 2px solid black;
     margin-bottom: 2rem;
@@ -106,6 +119,8 @@ body{
 .hederLine{
     border-bottom: 1px solid rgb(59, 59, 59);
     margin-bottom: 1rem;
+    margin-top: 0.5rem;
+
 
 }
 .education,
@@ -126,14 +141,19 @@ body{
     margin:10px 0;
     width: 100px;
     height: 30px;
-    background-color: rgb(35, 158, 119);
     border: none;
     border-radius: 20px;
     color: white;
     font-size: large;
+    background-color: rgb(41, 196, 147);
     font-weight: 700;
 }
 .submitButton:hover{
     cursor: pointer;
-    background-color: rgb(41, 196, 147);
+    background-color: rgb(35, 158, 119);
+}
+.contentHeader{
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }

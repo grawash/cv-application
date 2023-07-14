@@ -1,4 +1,10 @@
 import React, { Component } from "react";
+import evnelope from "./icons/envelope-solid.svg"
+import github from "./icons/github.svg"
+import phone from "./icons/phone-solid.svg"
+import location from "./icons/location-dot-solid.svg"
+import briefcase from "./icons/briefcase-solid.svg"
+import graduation from "./icons/graduation-cap-solid.svg"
 class Preview extends Component {
     constructor(props) {
         super(props);
@@ -10,15 +16,30 @@ class Preview extends Component {
                 <div className="generalInfo">
                     <h1 className="previewName">{this.props.name}</h1>
                     <div className="contacts">
-                        <p>{this.props.email}</p>
-                        <p>{this.props.phone}</p>
-                        <p>{this.props.adress}</p>
-                        <p>{this.props.link}</p>
+                        <div>
+                            <img src={evnelope} alt="email" width="15" height="15" />
+                            <p>{this.props.email}</p>
+                        </div>
+                        <div>
+                            <img src={phone} alt="email" width="15" height="15" />
+                            <p>{this.props.phone}</p>
+                        </div>
+                        <div>
+                            <img src={location} alt="email" width="15" height="15" />
+                            <p>{this.props.adress}</p>
+                        </div>
+                        <div>
+                            <img src={github} alt="email" width="15" height="15" />
+                            <p>{this.props.link}</p>
+                        </div>
                     </div>
                 </div>
                 <div className="nameBorder"></div>
                 <div className="education">
-                    <h2>Education</h2>
+                    <div className="contentHeader">
+                        <img src={graduation} alt="email" width="40" height="40" />
+                        <h2>Education</h2>
+                    </div>
                     <div className="hederLine"></div>
                     {!this.props.education.length && 
                         <div className="infoContent">
@@ -50,7 +71,10 @@ class Preview extends Component {
                     }
                 </div>
                 <div className="experience">
-                    <h2>Experience</h2>
+                <div className="contentHeader">
+                        <img src={briefcase} alt="email" width="40" height="40" />
+                        <h2>Experience</h2>
+                    </div>
                     <div className="hederLine"></div>
                     {!this.props.experience.length && 
                         <div className="infoContent">
