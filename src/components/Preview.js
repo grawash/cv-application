@@ -19,6 +19,14 @@ class Preview extends Component {
                     <div className="nameBorder"></div>
                 <div className="education">
                     <h2>Education</h2>
+                        {!this.props.education.length && 
+                        <div >
+                            <p>Harvard</p>
+                            <p>Computer science</p>
+                            <p>11/9/13</p>
+                            <p>21/6/17</p>
+                        </div>
+                        }
                         {
                             this.props.education.map((val,index) => {
                                 return(
@@ -34,6 +42,15 @@ class Preview extends Component {
                 </div>
                 <div className="experience">
                     <h2>Experience</h2>
+                    {!this.props.experience.length && 
+                        <div >
+                            <p>google</p>
+                            <p>web developer</p>
+                            <p>build cuttion web applications using different tools and languages.</p>
+                            <p>11/9/18</p>
+                            <p>21/6/23</p>
+                        </div>
+                    }
                     {
                             this.props.experience.map((val,index) => {
                                 return(
