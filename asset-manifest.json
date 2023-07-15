@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cv-application/static/css/main.a88deba3.css",
+    "main.js": "/cv-application/static/js/main.9aaa5df8.js",
+    "static/media/github.svg": "/cv-application/static/media/github.ebd452bf402237ef25876cdcac686676.svg",
+    "static/media/graduation-cap-solid.svg": "/cv-application/static/media/graduation-cap-solid.f351da4f6c31512f686383527bba9fee.svg",
+    "index.html": "/cv-application/index.html",
+    "static/media/briefcase-solid.svg": "/cv-application/static/media/briefcase-solid.ae66dae652e7b28dacfe39586cfe1c43.svg",
+    "static/media/phone-solid.svg": "/cv-application/static/media/phone-solid.b4a074baa24a40414433c87293d74020.svg",
+    "static/media/envelope-solid.svg": "/cv-application/static/media/envelope-solid.6345f82ededa4dc800949734956dc764.svg",
+    "static/media/location-dot-solid.svg": "/cv-application/static/media/location-dot-solid.2e0ef750ef3975644482ba424ba65ae0.svg",
+    "main.a88deba3.css.map": "/cv-application/static/css/main.a88deba3.css.map",
+    "main.9aaa5df8.js.map": "/cv-application/static/js/main.9aaa5df8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a88deba3.css",
+    "static/js/main.9aaa5df8.js"
+  ]
+}
