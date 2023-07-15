@@ -167,11 +167,13 @@ body{
     flex: 0;
 }
 .edit.expanded{
-    height: 100%;
+    height: auto;
     flex-grow: 1;
-    visibility: visible;
+    flex-shrink: 0;
+    flex-basis: 0;
     border-right:  1px solid rgb(48, 54, 68);
-
+    visibility: visible;
+    
 }
 .inputForm .inputButtons{
     display: flex;
