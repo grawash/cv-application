@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Inputs from "./Inputs";
-class EditInputs extends Component {
+class EditEducationInputs extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -55,4 +55,4 @@ class EditInputs extends Component {
     );
   }
 }
-export default EditInputs;
+export default EditEducationInputs;

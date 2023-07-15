@@ -53,7 +53,7 @@ class App extends Component {
 
   }
   handleEditClick(val){
-    console.log(val);
+    console.log(this.state.editTopic);
     this.setState(prevState => ({
       isExpanded: !prevState.isExpanded,
       editTopic: val,
@@ -67,6 +67,14 @@ class App extends Component {
       }
     )
   }
+  editExperienceHistory = (obj, index) => {
+    this.setState(prevState => {
+        const updatedItems = [...prevState.experience];
+        updatedItems[index] = obj;
+        return{experience: updatedItems}
+      }
+    )
+  }
   render() {
     return (
       <div className="generalContainer">
@@ -77,6 +85,7 @@ class App extends Component {
         education={this.state.education}
         experience={this.state.experience}
         editEducationHistory={this.editEducationHistory}
+        editExperienceHistory={this.editExperienceHistory}
          />
         <Preview 
         name={this.state.name}

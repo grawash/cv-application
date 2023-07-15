@@ -150,6 +150,7 @@ body{
 }
 .submitButton:hover{
     cursor: pointer;
+    scale: 105%;
     background-color: rgb(35, 158, 119);
 }
 .contentHeader{
@@ -176,4 +177,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.editHeader{
+    margin: 1rem 1rem;
+    color: rgb(171, 174, 184);
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgb(48, 54, 68);
 }

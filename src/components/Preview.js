@@ -92,24 +92,17 @@ class Preview extends Component {
                     {
                             this.props.experience.map((val,index) => {
                                 return(
-                                <div key={val.id} className="experienceContent">
-                                    <div className="experienceLeft">
+                                <div key={val.id} className="infoContent">
+                                    <div className="contentLeft">
                                         <p>{val.company}</p>
                                         <p>{val.position}</p>
-                                        <p>{val.jobDescribtion}</p>
+                                        <p>{val.jobDescription}</p>
                                     </div>
-                                    <div className="experienceRight">
+                                    <div className="contentRight">
                                         <p>{val.start}</p>
                                         <p>{val.end}</p>
                                     </div>
                                 </div> 
-                                    // <div key={val.id}>
-                                    //     <p>{val.company}</p>
-                                    //     <p>{val.position}</p>
-                                    //     <p>{val.jobDescribtion}</p>
-                                    //     <p>{val.start}</p>
-                                    //     <p>{val.end}</p>
-                                    // </div>
                                 ) 
                             })
                         }

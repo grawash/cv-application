@@ -19,7 +19,7 @@ class Inputs extends Component {
         let obj ={
             company: e.target.company.value,
             position: e.target.position.value,
-            jobDescribtion: e.target.jobDescribtion.value,
+            jobDescription: e.target.jobDescription.value,
             start: e.target.StartDateJob.value,
             end: e.target.endDateJob.value,
             id: (Math.random() + 1).toString(36).substring(7)
@@ -88,8 +88,8 @@ class Inputs extends Component {
                 <input type="text" id="position" name="position" placeholder="Web developer" />
             </div>
             <div>
-                <label htmlFor="jobDescribtion">Job desctiption:</label>
-                <input type="text" id="jobDescribtion" name="jobDescribtion" placeholder="build web applications using different tools and languages." />
+                <label htmlFor="jobDescription">Job description:</label>
+                <input type="text" id="jobDescription" name="jobDescription" placeholder="build web applications using different tools and languages." />
             </div>
             <div>
                 <label htmlFor="StartDateJob">Start date:</label>
