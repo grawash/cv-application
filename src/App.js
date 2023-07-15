@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import InputSide from "./components/InputSide";
 import Preview from "./components/Preview";
+import Edit from "./components/Edit";
 import './styles/style.css'
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -14,9 +16,14 @@ class App extends Component {
       link: 'github.com/...',
       education: [],
       experience: [],
+      isExpanded: false,
+      editTopic: '',
     };
     this.addEducation = this.addEducation.bind(this);
     this.addExperience = this.addExperience.bind(this);
+    this.handleEditClick = this.handleEditClick.bind(this);
+    this.editEducationHistory = this.editEducationHistory.bind(this);
+
 
   }
   changeValue = (e) => {
@@ -45,10 +52,32 @@ class App extends Component {
     console.log(this.state.education);
 
   }
+  handleEditClick(val){
+    console.log(val);
+    this.setState(prevState => ({
+      isExpanded: !prevState.isExpanded,
+      editTopic: val,
+    }));
+  }
+  editEducationHistory = (obj, index) => {
+    this.setState(prevState => {
+        const updatedItems = [...prevState.education];
+        updatedItems[index] = obj;
+        return{education: updatedItems}
+      }
+    )
+  }
   render() {
     return (
       <div className="generalContainer">
-        <InputSide changeName={this.changeValue} addEducation={this.addEducation} addExperience={this.addExperience} />
+        <InputSide changeName={this.changeValue} addEducation={this.addEducation} addExperience={this.addExperience} handleEditClick={this.handleEditClick} />
+        <Edit 
+        expanded={this.state.isExpanded} 
+        editTopic={this.state.editTopic}
+        education={this.state.education}
+        experience={this.state.experience}
+        editEducationHistory={this.editEducationHistory}
+         />
         <Preview 
         name={this.state.name}
         email={this.state.email}
@@ -59,6 +88,7 @@ class App extends Component {
         experience={this.state.experience}
 
           />
+
       </div>
     );
   }

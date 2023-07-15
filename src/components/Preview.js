@@ -81,7 +81,7 @@ class Preview extends Component {
                             <div className="contentLeft">
                             <p>google</p>
                             <p>web developer</p>
-                            <p>build cuttion web applications using different tools and languages.</p>
+                            <p>build web applications using different tools and languages.</p>
                             </div>
                             <div className="contentRight">
                             <p>11/9/18</p>

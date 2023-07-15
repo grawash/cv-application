@@ -7,7 +7,7 @@ class InputSide extends Component {
   render() {
     return (
       <div className="inputsSide">
-        <Inputs changeName={this.props.changeName} addEducation={this.props.addEducation} addExperience={this.props.addExperience} />
+        <Inputs changeName={this.props.changeName} addEducation={this.props.addEducation} addExperience={this.props.addExperience} handleEditClick={this.props.handleEditClick} />
       </div>
     );
   }

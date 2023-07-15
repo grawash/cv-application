@@ -35,8 +35,6 @@ body{
     flex-grow: 2;
     flex-shrink: 0;
     flex-basis: 0;
-    align-items: center;
-    justify-content: center;
 }
 .inputs{
     display: flex;
@@ -80,9 +78,11 @@ body{
 }
 .resumeContainer{
     background-color: rgb(238, 238, 238);
-    min-height: 90%;
+    height: max-content;
+    min-height: 90vh;
     width: 80%;
-    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
     margin-top: 20px;
     margin-bottom: 20px;
     color: black;
@@ -156,4 +156,24 @@ body{
     display: flex;
     gap: 5px;
     align-items: center;
+}
+.edit{
+    height: auto;
+    visibility: hidden;
+    height: 100vh;
+    overflow: hidden;
+    width: 0px;
+    flex: 0;
+}
+.edit.expanded{
+    height: 100%;
+    flex-grow: 1;
+    visibility: visible;
+    border-right:  1px solid rgb(48, 54, 68);
+
+}
+.inputForm .inputButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
